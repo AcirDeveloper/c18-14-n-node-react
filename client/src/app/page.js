@@ -1,11 +1,11 @@
-import { Button } from '@nextui-org/button'
-import { divider } from '@nextui-org/react'
-import Imagenes from './utils/Imagenes'
+import { ButtonOrange } from "@/components/Buttons/ButtonOrange";
 
 export default function Home() {
+
+
 	return (
 		<div>
-			<Imagenes />
+			<ButtonOrange text="Crear Cuenta" />
 		</div>
 	)
 }
