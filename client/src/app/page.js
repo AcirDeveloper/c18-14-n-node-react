@@ -1,3 +1,11 @@
+
+import { ButtonOrange } from "@/components/Buttons/ButtonOrange";
+
 export default function Home() {
-	return <p>Hola</p>
+	return (
+		<div>
+			<ButtonOrange text="Crear Cuenta" />
+		</div>
+	)
+
 }
