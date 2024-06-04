@@ -1,6 +1,6 @@
 const SaldoCard = () => {
     return (
-        <div className="bg-slate-100  flex flex-col w-1/3 md:ml-60 h-40 rounded-2xl">
+        <div className="bg-slate-100  flex flex-col border-solid border-l-3 border-b-4 border-slate-400 w-1/3 md:ml-60 h-40 rounded-2xl">
             <div className="flex md:mt-4 items-center">
                 <h1 className=" md:ml-5  text-blue-800 text-3xl">Saldo</h1>
                 <h2 className=" md:ml-3 text-green-600 text-xl ">^0.00%</h2>
