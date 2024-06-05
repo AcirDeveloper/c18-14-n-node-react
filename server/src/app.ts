@@ -9,7 +9,7 @@ const app = express();
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const corsOptions = {
-  origin: ['*', FRONTEND_URL],
+  origin: ['*'],
   credentials: true,
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
