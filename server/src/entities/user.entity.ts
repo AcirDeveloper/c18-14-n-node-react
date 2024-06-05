@@ -1,5 +1,6 @@
-import { Entity, Column, CreateDateColumn, UpdateDateColumn, Unique, PrimaryGeneratedColumn, JoinTable, ManyToMany } from "typeorm"
+import { Entity, Column, CreateDateColumn, UpdateDateColumn, Unique, PrimaryGeneratedColumn, JoinTable, ManyToMany, OneToOne, JoinColumn } from "typeorm"
 import { Role } from "./role.entity"
+import { Profile } from "./profile.entity"
 
 @Entity({ name: "users" })
 @Unique(['username', 'email'])
@@ -38,5 +39,9 @@ export class User {
     @ManyToMany(() => Role, role => role.users)
     @JoinTable()
     roles: Role[];
+
+    @OneToOne(() => Profile, profile => profile.user)
+    @JoinColumn()
+    profile: Profile;
 
 }
