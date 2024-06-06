@@ -2,8 +2,8 @@ import Cards from '@/components/Cards/Cards'
 import AuthInput from '@/components/Inputs/AuthInput'
 import AuthInputPassword from '@/components/Inputs/AutInputPassword'
 import images from '../../utils/Images'
-import { ButtonOrange } from '@/components/Buttons/ButtonOrange'
 import Link from 'next/link'
+import { OrangeButton } from '@/components/Buttons/OrangeButton'
 
 export default function Login() {
 	return (
@@ -18,7 +18,8 @@ export default function Login() {
 							<AuthInput label={'Usuario'} />
 							<AuthInputPassword label={'Contraseña'} />
 							<div className='flex justify-center'>
-								<ButtonOrange text={'Crear Cuenta'} />
+								{/* <ButtonOrange text={'Confirmar'} /> */}
+								<OrangeButton text={'Confirmar'} />
 							</div>
 						</form>
 						<p className='w-[320.55px] h-[28.18px] text-center text-neutral-100 text-lg font-normal leading-[10px] tracking-tight mt-10'>
