@@ -28,7 +28,7 @@ export const Sidebar = ({ sectionsSidebar, selectedTag, onTagChange = () => {} }
     }
 
     return (
-        <aside className="h-screen ">
+        <aside className="h-full">
             <nav className={`relative h-full flex flex-col bg-[#112F63] rounded-tl-none rounded-bl-none rounded-tr-3xl rounded-br-3xl custom-shadow`}>   
                 {/* Boton para reducir */}
                 <div

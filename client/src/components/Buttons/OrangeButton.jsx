@@ -8,11 +8,13 @@ export const OrangeButton = ({
     whitBorder=false,
     bgColor = "bg-[#F6A028]",
     colorText="text-black",
+    fontWeight="font-bold",
+    onClick=()=>{}
 })=>{
     const classBorder = whitBorder ? "border-2 border-amber-400" : ""
     
     return (
-        <Button radius="full" variant={`${whitBorder ? "bordered" : ""}`}  className={`${bgColor} ${colorText} ${classBorder} font-bold`} >
+        <Button onPress={onClick} radius="full" variant={`${whitBorder ? "bordered" : ""}`}  className={`${bgColor} ${colorText} ${classBorder} ${fontWeight} `} >
             {text}
         </Button>
     )
