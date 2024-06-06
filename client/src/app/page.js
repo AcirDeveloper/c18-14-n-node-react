@@ -1,3 +1,4 @@
+import MisActividades from "@/components/MisActividades/MisActividades";
 import SaldoCard from "@/components/SaldoCard/SaldoCard";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
 		<>
 			<h1>HOME</h1>
 			<SaldoCard></SaldoCard>
+			<MisActividades />
 		</>
 	)
 }
