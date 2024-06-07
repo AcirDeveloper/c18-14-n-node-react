@@ -4,6 +4,7 @@ import { DataSource } from "typeorm";
 import * as dotenv from "dotenv";
 import { User } from "../entities/user.entity";
 import { Role } from "../entities/role.entity";
+import { Profile } from "../entities/profile.entity";
 
 dotenv.config();
 
@@ -17,10 +18,12 @@ export const AppDataSource = new DataSource({
   username: DB_USERNAME,
   password: DB_PASSWORD,
   database: DB_DATABASE,
-
+  ssl: {
+    rejectUnauthorized: false,
+  },
   synchronize: NODE_ENV === "dev" ? true : false,
   logging: NODE_ENV === "dev" ? false : false,
-  entities: [User, Role],
+  entities: [User, Role, Profile],
   migrations: [__dirname + "/migration/*.ts"],
   subscribers: [],
 });
