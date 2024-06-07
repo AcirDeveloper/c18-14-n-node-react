@@ -2,7 +2,7 @@ import Cards from "@/components/Cards/Cards";
 import AuthInput from "@/components/Inputs/AuthInput";
 import AuthInputPassword from "@/components/Inputs/AutInputPassword";
 import images from "../../utils/Images";
-import { ButtonOrange } from "@/components/Buttons/ButtonOrange";
+import ButtonOrange from "@/components/Buttons/OrangeButton";
 import Link from "next/link";
 
 export default function Login() {
