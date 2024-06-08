@@ -1,6 +1,7 @@
-import { Entity, Column, CreateDateColumn, UpdateDateColumn, Unique, PrimaryGeneratedColumn, JoinTable, ManyToMany, OneToOne, JoinColumn } from "typeorm"
+import { Entity, Column, CreateDateColumn, UpdateDateColumn, Unique, PrimaryGeneratedColumn, JoinTable, ManyToMany, OneToOne, JoinColumn, OneToMany } from "typeorm"
 import { Role } from "./role.entity"
 import { Profile } from "./profile.entity"
+import { LoanApplication } from "./loan-application.entity"
 
 @Entity({ name: "users" })
 @Unique(['username', 'email'])
@@ -43,5 +44,11 @@ export class User {
     @OneToOne(() => Profile, profile => profile.user)
     @JoinColumn()
     profile: Profile;
+
+    @OneToMany(() => LoanApplication, loanApplication => loanApplication.applicant)
+    applicantLoanApplications: LoanApplication[];
+
+    @OneToMany(() => LoanApplication, loanApplication => loanApplication.investor)
+    investorLoanApplications: LoanApplication[];
 
 }
