@@ -4,13 +4,16 @@ import { LoanApplication, LoanApplicationStatus } from '../entities/loan-applica
 import { LoanApplicationRepository } from '../repositories/loan-application.repository';
 import { CreateLoanApplicationDTO, UpdateLoanApplicationDTO } from '../dtos/loan-application/create-loan-application.dto';
 import { User } from '../entities/user.entity';
+import { UserRepository } from '../repositories/user.repository';
 
 export class LoanApplicationService {
 
     private loanApplicationRepository: Repository<LoanApplication>;
+    private userRepository: Repository<User>;
 
     constructor() {
         this.loanApplicationRepository = AppDataSource.getRepository(LoanApplication);
+        this.userRepository = AppDataSource.getRepository(User);
     }
     
     async getAllLoanApplications(userLogged: User): Promise<LoanApplication[]> {
@@ -62,7 +65,7 @@ export class LoanApplicationService {
 
     async updateLoanApplication(id: string, updateLoanApplicationDto: UpdateLoanApplicationDTO, userLogged: User): Promise<LoanApplication | null> {
         try {
-            const myLoanApplication = await this.loanApplicationRepository.findOneBy({id});
+            /*const myLoanApplication = await this.loanApplicationRepository.findOneBy({id});
             if(updateLoanApplicationDto.status){
                 const userRoles = userLogged.roles.map(role => role.name);
 
@@ -89,10 +92,65 @@ export class LoanApplicationService {
             } else {
                 myLoanApplication.status = updateLoanApplicationDto.status;
             }
+            return await this.loanApplicationRepository.save(myLoanApplication);*/
+            const { status } = updateLoanApplicationDto;
+
+            const myLoanApplication = await this.loanApplicationRepository.findOneBy({id});
+
+            if (!myLoanApplication) {
+                throw new Error('Loan application not found');
+            }
+
+            this.assignInvestorIfNeeded(myLoanApplication, userLogged, status);
+            this.validateStatusTransition(myLoanApplication, status);
+            this.updateStatusAndApprovalDate(myLoanApplication, status);
+
             return await this.loanApplicationRepository.save(myLoanApplication);
         } catch (error: any) {
             throw new Error(error.message);
         }
         
     }
+
+    private async assignInvestorIfNeeded(loanApplication: LoanApplication, user: User, status: string) {
+        if (status) {
+            const investorUser = await this.userRepository.findOne({
+                where: {
+                    id: user.id
+                },
+                relations: ['roles']
+            });
+            const userRoles = investorUser.roles.map(role => role.name);
+            if (userRoles.includes('investor')) {
+                loanApplication.investor = user;
+            } else{
+                throw new Error('You are not a Investor')
+            }
+        }
+      }
+    
+      private validateStatusTransition(loanApplication: LoanApplication, newStatus: string) {
+        if (
+          (loanApplication.status === LoanApplicationStatus.APPROVED || loanApplication.status === LoanApplicationStatus.REJECTED) &&
+          newStatus === LoanApplicationStatus.PENDING
+        ) {
+          throw new Error('Cannot change status back to [En Espera] from [Aprobado] or [Rechazado].');
+        }
+      }
+    
+      private updateStatusAndApprovalDate(loanApplication: LoanApplication, newStatus: LoanApplicationStatus) {
+        switch (newStatus) {
+          case LoanApplicationStatus.APPROVED:
+            loanApplication.status = LoanApplicationStatus.APPROVED;
+            loanApplication.approvement_application_date = new Date();
+            break;
+          case LoanApplicationStatus.REJECTED:
+            loanApplication.status = LoanApplicationStatus.REJECTED;
+            loanApplication.approvement_application_date = null;
+            break;
+          default:
+            loanApplication.status = newStatus;
+            break;
+        }
+      }
 }
