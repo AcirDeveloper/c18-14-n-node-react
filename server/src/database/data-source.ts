@@ -5,6 +5,9 @@ import * as dotenv from "dotenv";
 import { User } from "../entities/user.entity";
 import { Role } from "../entities/role.entity";
 import { Profile } from "../entities/profile.entity";
+import { LoanApplication } from "../entities/loan-application.entity";
+import { PaymentOrder } from "../entities/payment-order.entity";
+import { LoanApplicationSubscriber } from "../suscribers/loanApplication.suscriber";
 
 dotenv.config();
 
@@ -23,7 +26,7 @@ export const AppDataSource = new DataSource({
   },
   synchronize: NODE_ENV === "dev" ? true : false,
   logging: NODE_ENV === "dev" ? false : false,
-  entities: [User, Role, Profile],
+  entities: [User, Role, Profile, LoanApplication, PaymentOrder],
   migrations: [__dirname + "/migration/*.ts"],
-  subscribers: [],
+  subscribers: [LoanApplicationSubscriber],
 });

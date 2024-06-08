@@ -2,6 +2,7 @@ import { Router } from 'express';
 import authRoutes from './auth.routes';
 import userRoutes from './user.routes';
 import profileRoutes from './profile.routes';
+import loanApplicationRoutes from './loan-application.routes';
 
 const router = Router();
 
@@ -12,6 +13,9 @@ router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
 
 // Rutas de perfiles
-router.unsubscribe('/profile', profileRoutes);
+router.use('/profile', profileRoutes);
+
+// Rutas de solicitudes de préstamo
+router.use('/loan-applications', loanApplicationRoutes);
 
 export default router;
