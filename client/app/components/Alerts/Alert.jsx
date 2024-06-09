@@ -8,8 +8,8 @@ import {
 	Button,
 	useDisclosure,
 } from '@nextui-org/react'
-import { OrangeButton } from '../Buttons/MyButton'
-import images from '@/app/utils/Images'
+import MyButton from '../Buttons/MyButton'
+import images from '../../utils/Images'
 
 export const Alert = ({ isOpen, onClick, onClose, title = '' }) => {
 	const img = images.alertVerification
@@ -30,8 +30,8 @@ export const Alert = ({ isOpen, onClick, onClose, title = '' }) => {
 							</div>
 						</ModalBody>
 						<ModalFooter>
-							<OrangeButton text='Verificar Cuenta' fontWeight='text-sm' onClick={onClick} />
-							<OrangeButton
+							<MyButton text='Verificar Cuenta' fontWeight='text-sm' onClick={onClick} />
+							<MyButton
 								text='Volver'
 								whitBorder={true}
 								bgColor='bg-slate-100'

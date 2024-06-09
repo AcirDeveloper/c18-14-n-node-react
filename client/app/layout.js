@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body className={`${inter.className} antialiased`}>
 				<Providers>
-					<main className='h-screen-minus-100px'>
+					<main className='h-screen'>
 						<NavbarTop />
 						{children}
 					</main>

@@ -1,7 +1,5 @@
+import BalanceCard from './components/BalanceCard/BalanceCard'
+
 export default function Home() {
-	return (
-		<>
-			<h1>HOME</h1>
-		</>
-	)
+	return <BalanceCard />
 }
