@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
-import images from '../../app/utils/Images'
+import images from '../../utils/Images'
 
 export default function AuthInputPassword({ label, name, type }) {
 	const [visible, setVisible] = useState(false)
