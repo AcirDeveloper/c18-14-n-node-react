@@ -5,6 +5,7 @@ const images = {
 	termConditions: '/images/terminos.png',
 	balance: '/icons/saldo1.svg',
 	alertVerification: '/icons/alertVerification.svg',
+	security: '/icons/security.svg',
 }
 
 export default images
