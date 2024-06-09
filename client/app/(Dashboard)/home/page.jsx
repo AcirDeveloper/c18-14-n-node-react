@@ -1,3 +1,9 @@
+import BalanceCard from '../../components/BalanceCard/BalanceCard'
+
 export default function Home() {
-	return <div>Home este es el home</div>
+	return (
+		<>
+			<BalanceCard />
+		</>
+	)
 }
