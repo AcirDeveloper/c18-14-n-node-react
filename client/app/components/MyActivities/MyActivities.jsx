@@ -12,4 +12,4 @@ const MyActivities = () => {
 		</nav>
 	)
 }
-export default MisActividades
+export default MyActivities

@@ -18,7 +18,9 @@ export default function Login() {
 							<AuthInput label={'Usuario'} />
 							<AuthInputPassword label={'Contraseña'} />
 							<div className='flex justify-center'>
-								<MyButton text={'Crear Cuenta'} />
+								<Link href={'/home'}>
+									<MyButton text={'Iniciar Sesion'} />
+								</Link>
 							</div>
 						</form>
 						<p className='w-[320.55px] h-[28.18px] text-center text-neutral-100 text-lg font-normal leading-[10px] tracking-tight mt-10'>
