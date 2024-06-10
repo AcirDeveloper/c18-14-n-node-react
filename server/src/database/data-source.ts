@@ -8,6 +8,9 @@ import { Profile } from "../entities/profile.entity";
 import { LoanApplication } from "../entities/loan-application.entity";
 import { PaymentOrder } from "../entities/payment-order.entity";
 import { LoanApplicationSubscriber } from "../suscribers/loanApplication.suscriber";
+import { CreditCard } from "../entities/credit-card.entity";
+import { Account } from "../entities/account.entity";
+import { Transaction } from "../entities/transaction.entity";
 
 dotenv.config();
 
@@ -26,7 +29,7 @@ export const AppDataSource = new DataSource({
   },
   synchronize: NODE_ENV === "dev" ? true : false,
   logging: NODE_ENV === "dev" ? false : false,
-  entities: [User, Role, Profile, LoanApplication, PaymentOrder],
+  entities: [User, Role, Profile, LoanApplication, PaymentOrder, CreditCard, Account, Transaction],
   migrations: [__dirname + "/migration/*.ts"],
   subscribers: [LoanApplicationSubscriber],
 });

@@ -1,5 +1,6 @@
-import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn, OneToOne, JoinColumn} from "typeorm"
+import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn, OneToOne, JoinColumn, OneToMany} from "typeorm"
 import { User } from "./user.entity"
+import { CreditCard } from "./credit-card.entity"
 
 @Entity({ name: "profiles" })
 export class Profile {
@@ -34,4 +35,7 @@ export class Profile {
     @OneToOne(() => User, user => user.profile)
     @JoinColumn()
     user: User;
+
+    @OneToMany(() => CreditCard, creditCard => creditCard.profile)
+    profileCreditCards: CreditCard[];
 }

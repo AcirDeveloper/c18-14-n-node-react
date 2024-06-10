@@ -6,17 +6,20 @@ import { In, Repository } from 'typeorm';
 import { Role } from '../entities/role.entity';
 import { AppDataSource } from '../database/data-source';
 import { Profile } from '../entities/profile.entity';
+import { Account } from '../entities/account.entity';
 
 export class UserService {
 
     private userRepository: Repository<User>;
     private roleRepository: Repository<Role>;
     private profileRepository: Repository<Profile>;
+    private accountRepository: Repository<Account>;
 
     constructor() {
         this.userRepository = AppDataSource.getRepository(User);
         this.roleRepository = AppDataSource.getRepository(Role);
         this.profileRepository = AppDataSource.getRepository(Profile);
+        this.accountRepository = AppDataSource.getRepository(Account);
     }
     
     async getAllUsers(): Promise<User[]> {
@@ -35,7 +38,8 @@ export class UserService {
                     id: id
                 },
                 relations: {
-                    profile: true
+                    profile: true,
+                    account: true
                 }
             });
         } catch (error) {
@@ -47,6 +51,7 @@ export class UserService {
     async createUser(createUserDto: CreateUserDTO): Promise<User> {
         try {
             const { username, email, password, roles } = createUserDto;
+            const newAccount = this.accountRepository.create();
             const newProfile = this.profileRepository.create(); 
             const hashedPassword = await encrypt.encryptPassword(password);
             const newUser = this.userRepository.create({
@@ -59,7 +64,10 @@ export class UserService {
                 newUser.roles = await this.roleRepository.find({ where: { name: In(roles) } });
             }
             const savedProfile = await this.profileRepository.save(newProfile);
+            newAccount.balance = 0;
+            const savedAccount = await this.accountRepository.save(newAccount);
             newUser.profile = savedProfile;
+            newUser.account = savedAccount;
             await this.userRepository.save(newUser);
 
             return newUser;

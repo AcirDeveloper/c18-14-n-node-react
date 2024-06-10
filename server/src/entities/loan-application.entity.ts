@@ -9,7 +9,6 @@ export enum LoanApplicationStatus {
 }
 
 @Entity({ name: "loan_applications" })
-//@Unique(['username', 'email'])
 export class LoanApplication {
 
     @PrimaryGeneratedColumn('uuid')

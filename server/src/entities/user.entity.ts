@@ -2,6 +2,8 @@ import { Entity, Column, CreateDateColumn, UpdateDateColumn, Unique, PrimaryGene
 import { Role } from "./role.entity"
 import { Profile } from "./profile.entity"
 import { LoanApplication } from "./loan-application.entity"
+import { Account } from "./account.entity"
+import { Transaction } from "./transaction.entity"
 
 @Entity({ name: "users" })
 @Unique(['username', 'email'])
@@ -41,14 +43,21 @@ export class User {
     @JoinTable()
     roles: Role[];
 
-    @OneToOne(() => Profile, profile => profile.user)
+    @OneToOne(() => Profile, profile => profile.user, { cascade: true })
     @JoinColumn()
     profile: Profile;
+
+    @OneToOne(() => Account, account => account.user)
+    @JoinColumn()
+    account: Account;
 
     @OneToMany(() => LoanApplication, loanApplication => loanApplication.applicant)
     applicantLoanApplications: LoanApplication[];
 
     @OneToMany(() => LoanApplication, loanApplication => loanApplication.investor)
     investorLoanApplications: LoanApplication[];
+
+    @OneToMany(() => Transaction, transaction => transaction.user)
+    transactions: Transaction[];
 
 }

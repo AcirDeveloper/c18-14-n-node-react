@@ -3,7 +3,6 @@ import { User } from '../../entities/user.entity';
 import { LoanApplicationStatus } from '../../entities/loan-application.entity';
 
 export class CreateLoanApplicationDTO {
-
   @IsNotEmpty()
   @IsString()
   @Length(1, 100)
