@@ -12,7 +12,7 @@ export class PaymentOrder {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column('decimal', { precision: 10, scale: 2, default: 0 })
+    @Column('decimal', { precision: 10, scale: 2})
     amount: number;
 
     @Column()
@@ -27,6 +27,9 @@ export class PaymentOrder {
         default: PaymentOrderStatus.PENDING,
     })
     state: PaymentOrderStatus;
+
+    @Column({nullable: true, type: 'date'})
+    payment_date: Date | null;
 
     @CreateDateColumn()
     created_at: Date;
