@@ -124,11 +124,11 @@ const Loan = () => {
                     <div className="flex xl:w-[28vw] xl:-ml-[40vh] xl:-mt-20 rounded-lg border-dotted border-2 border-black text-[#113f63] 2xl:-mt-36">
                         <div className="flex flex-col border-dotted border-r-2 border-black xl:px-7 xl:py-2">
                             <label htmlFor="interest-rate" className="mb-2 font-bold ">Tasa de Interés</label>
-                            <p id="interest-rate" className="p-2 border-2 border-gray-200 rounded-md">{interestRate}</p>
+                            <p id="interest-rate" className="p-2 border-2 border-gray-200 rounded-md text-black">{interestRate}</p>
                         </div>
                         <div className="flex flex-col px-7 py-2">
                             <label htmlFor="installment-value" className="mb-2 font-bold ">Valor de Cuota</label>
-                            <p id="installment-value" className="p-2 border-2 border-gray-200 rounded-md">{installmentValue}</p>
+                            <p id="installment-value" className="p-2 border-2 border-gray-200 rounded-md text-black">{installmentValue}</p>
                         </div>
                     </div>
 
