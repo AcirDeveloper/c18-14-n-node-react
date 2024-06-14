@@ -3,17 +3,21 @@ import { Slider } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
 import { useState, useEffect } from 'react';
 import "./loan.css"
+import Validation from "../../components/validation/validation";
+import images from "../../utils/Images";
 
 const Loan = () => {
 
     const [interestRate, setInterestRate] = useState('$00,00 (0%)');
     const [installmentValue, setInstallmentValue] = useState('$00,00');
     const [isScreenSmall, setIsScreenSmall] = useState(false);
+    const [errors, setErrors] = useState({})
     const [data, setData] = useState({
         monto: "",
         poryecto: "",
 
     })
+    console.log(data.monto);
 
     //lo que hago aca es para que cuando se mueva el slider aumenta segun su valor   
     const handleSliderChange = (value) => {
@@ -25,6 +29,21 @@ const Loan = () => {
             setInstallmentValue(`$${value * 100},00`);
         }
     };
+
+    const handleChange = (event) => {
+        setData({
+            ...data,
+            [event.target.name]: event.target.value
+        });
+        //valido los errores
+        setErrors(
+            Validation({
+                ...data,
+                [event.target.name]: event.target.value
+            })
+        )
+    }
+
 
     //lo uso para el slider por que no meda poner 2 medias. //para mi resolucion y para la de 1920x1080
     useEffect(() => {
@@ -39,6 +58,9 @@ const Loan = () => {
     }, []);
 
 
+    const montoClass = errors.monto ? "flex justify-start rounded-xl bg-transparent border-solid border-2  border-red-700 xl:mt-2 xl:-ml-[40vh] xl:w-[60vh] h-[37px] 2xl:h-[57px]" : "flex justify-start rounded-xl bg-transparent border-solid border-2 border-[#113f63]  xl:mt-2 xl:-ml-[40vh] xl:w-[60vh] h-[37px] 2xl:h-[57px]";
+
+
     return (
         <div className=" flex flex-col items-center text-[#112F63]">
             <h1 className="xl:mr-[67%] xl:text-3xl text-[#112F63] 2xl:text-5xl ">Solicitud de Préstamo</h1>
@@ -47,12 +69,18 @@ const Loan = () => {
                 <form className="flex xl:mt-20 flex-col 2xl:text-2xl">
 
                     <label className="xl:-ml-[40vh] 2xl:mt-6">Monto a solicitar</label>
-                    <div className="flex justify-start rounded-xl bg-transparent border-solid border-2 border-[#113f63] xl:mt-2 xl:-ml-[40vh] xl:w-[60vh] h-[37px] 2xl:h-[57px]">
+                    <div className={montoClass} >
                         <img src="/images/dolar.png" className="w-8 h-8  2xl:w-12 2xl:h-12 " />
-                        <input placeholder="Ej: 20.000,00--" className="bg-transparent ml-1 " />
+                        <input placeholder="Ej: 20.000,00--" name="monto" type="text" value={data.monto} onChange={handleChange} className="bg-transparent ml-1 text-black w-[100%]" />
+                        {errors.monto &&
+                            <div >
+                                <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:mt-2 xl:ml-[14vh]" />
+                                <p className="text-red-700 mt-4 -ml:-72 xl:max-w-full">{errors.monto}</p>
+                            </div>
+                        }
                     </div>
                     <label className="xl:ml-[25vh] xl:-mt-[12.8%] px-10  2xl:px-16 2xl:-mt-[10%]" >Proyecto a financiar</label>
-                    <Textarea className="bg-transparent border-solid border-2 border-[#113f63] rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2"
+                    <Textarea maxlength="100" className="bg-transparent border-solid border-2 border-[#113f63] rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2"
                         classNames={{
                             innerWrapper: "bg-transparent xl:h-[7vh]",
                             inputWrapper: ["bg-transparent  overflow-auto",
