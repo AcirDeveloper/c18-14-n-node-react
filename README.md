@@ -6,12 +6,45 @@ Nuestra plataforma permite a los prestatarios obtener financiamiento flexible de
 <H2 align="center"> Video Promocional </H2>
 <div align="center"> <a href="" > <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=YouTube&logoColor=white"/></a></div>
 <H2 align="center"> Proyecto </H2>
-<div align="center"> <a href="https://github.com/No-Country/c18-14-n-node-react" > <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=YouTube&logoColor=white"/></a></div>
-
+<div align="center"> <a href="https://github.com/No-Country/c18-14-n-node-react" > <img src="https://cdn.discordapp.com/attachments/1238921841859498024/1250983575004643478/image.png?ex=666d957e&is=666c43fe&hm=2b62307f8fc8952f564325a18c5c22a177fbabcb04ebf1dccd7e9495858be957&" height="30" width="110" /></a></div>
+<H2 align="center"> Funcionalidades Principales </H2>
+<p<>Nuestra plataforma permite a los usuarios:</p>
+</br>
+<ul>
+  <li><strong>Registro e Inicio de Sesión:</strong> Los usuarios pueden registrarse en la plataforma utilizando su correo electrónico y luego iniciar sesión para acceder al panel principal.</li>
+  <li><strong>Verificación de Cuenta:</strong> Los usuarios deben completar su perfil con datos personales y financieros, e ingresar su método de pago para ser verificados y poder acceder a las funciones de inversión y solicitud de préstamos.</li>
+  <li><strong>Solicitar Préstamo:</strong> El usuario podrá completar un formulario con la solicitud de su préstamos, contando además un breve detalle de su proyecto.</li>
+  <li><strong>Flexibilidad de pago:</strong> El usuario en el formulario podrá indicar el monto y la cantidad de cuotas que desea cancelar.</li>
+  <li><strong>Historial y estatus de solicitudes:</strong> Podrá ver un listado de las solicitudes previas que haya realizado y ver su estatus también.</li>
+  <li><strong>Explorar oportunidades de inversión:</strong> El usuario si desea invertir, podrá explorar un listado de solicitudes de otros prestatarios, filtrar según su preferencia y ver el detalle de cada una para profundizar y tomar una decisión más informada.</li>
+  <li><strong>Invertir en solicitudes elegidas:</strong> Al visualizar una o más solicitudes de su agrado, podrá invertir y pasar a la pasarela de pago.</li>
+  <li><strong>Historial de inversiones:</strong> El usuario podrá tener acceso a su historial completo de inversiones donde refleja el estatus de cada una y podrá ver el detalle completo del trámite.</li>
+  <li><strong>Cargar Saldo:</strong> El usuario tendrá la posibilidad de mantener un saldo disponible en la plataforma para futuras inversiones o pagos de cuotas.</li>
+  <li><strong>Retirar Saldo:</strong> El usuario podrá retirar el dinero que posea disponible en la plataforma al método de pago de su preferencia.</li>
+  <li><strong>Pago de Cuotas:</strong> El usuario podrá realizar pago de cuotas con el saldo disponible dentro de la plataforma y además escoger la pasarela de pago de preferencia.</li>
+  <li><strong>Historial de movimientos:</strong> El usuario tendrá acceso a un historial de todos sus movimientos generales, tanto carga de saldo, retiro, pagos de cuotas, inversiones, etc.</li>
+  <li><strong>Balance de sus inversiones:</strong> Podrá tener acceso en el panel principal a una estadística de sus inversiones donde le refleja sus ganancias o pérdidas de un periodo de tiempo.</li>
+  <li><strong>Recibir notificaciones:</strong> La plataforma notificará al usuario sobre cada cambio que le competa estar informado como recepción de pago de cuotas, solicitud aceptada por inversionista, recordatorio de fecha de pago, etc.</li>
+  <li><strong>Sección Ayuda:</strong> El usuario podrá aclarar algunas dudas que presente respecto al proceso de solicitud/inversión , a su vez la información de contacto para solicitar soporte.</li>
+</ul>
 <H2 align="center"> Pantallas </H2>
-<div classname=" grid-gap-30 grid-column-2" align="center"> 
+<div classname=" grid-gap-30 grid-column-3" align="center"> 
 <img src="https://cdn.discordapp.com/attachments/1238921841859498024/1250971084094701609/image.png?ex=666ce11c&is=666b8f9c&hm=8f7acc823a61c5d7645bdce6c85b631b7806e8d75da30c07eedbacb646f870dd&" height="250" width="350" />
 <img src="https://cdn.discordapp.com/attachments/1238921841859498024/1250972555070931104/image.png?ex=666ce27b&is=666b90fb&hm=e68aaf5e64f207d464db8aba203c2a011442c0eba2db65c542259f46cbc4923a&" height="250" width="350" />
+<img src="https://cdn.discordapp.com/attachments/1238921841859498024/1251224554236416070/image.png?ex=666dcd2c&is=666c7bac&hm=debd1b789f2bd922d681ddff77edb1e4359924299cb6f39fa81eb5a45a77548a&" height="250" width="100" />
 <img src="https://cdn.discordapp.com/attachments/1238921841859498024/1250972688403664987/image.png?ex=666ce29a&is=666b911a&hm=a512e1f8eaf0b70508a4053971019fb2a1f44a2ba52424d0a5d64e2af4ff864e&" height="250" width="350" />
 <img src="https://cdn.discordapp.com/attachments/1238921841859498024/1250972946994958336/image.png?ex=666ce2d8&is=666b9158&hm=3e1bea9f9f176f7db5ba38aeeb43f50b8f0cf6c7805d32c2a5db57d7bb11a9b0&" height="250" width="350" />
-</div>
+<img src="https://cdn.discordapp.com/attachments/1238921841859498024/1251225090767720478/image.png?ex=666dcdac&is=666c7c2c&hm=46dc0766c34404638659f234cb71faf0ca8824bb71a9af01f3de35df4ca4ea0e&" height="250" width="100" /></div>
+<H2 align="center"> Requisitos Previos </H2>
+<p<>Asegúrese de tener las siguientes herramientas instaladas antes de comenzar: </p>
+<ul>
+  <li>
+    Node.js
+  </li>
+</ul>
+<H2 align="center"> Instalación </H2>
+<a href="https://github.com/AcirDeveloper/c18-14-n-node-react/tree/dev/client"> Frontend </a>
+<h3>Backend</h3>
+
+
+
