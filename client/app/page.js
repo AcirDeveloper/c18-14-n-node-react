@@ -1,5 +1,5 @@
-import BalanceCard from './components/BalanceCard/BalanceCard'
+import Login from "./(Landing)/login/page";
 
-export default function Home() {
-	return <BalanceCard />
+export default function Page() {
+	return (<Login />)
 }

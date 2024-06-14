@@ -7,63 +7,64 @@ import { MdOutlineChecklistRtl } from "react-icons/md";
 
 export const getSectionsSidebar = () => {
     return [
-        { 
-            tag: 'profile', 
+        {
+            tag: 'profile',
             text: 'Mi Perfil',
-            icon: <FaUserCircle className="text-3xl"/>,
+            icon: <FaUserCircle className="text-3xl" />,
             show: true
         },
-        { 
+        {
             tag: 'home',
-            text: 'Inicio',
-            icon: <IoMdHome className="text-3xl"/>,
+            text: <a href="/home">Inicio</a>,
+            icon: <IoMdHome className="text-3xl" />,
             show: true
         },
-        { 
-            tag: 'noti', 
-            text: 'Notificaciones', 
-            icon: <IoIosNotifications className="text-3xl"/>,
+        {
+            tag: 'noti',
+            text: 'Notificaciones',
+            icon: <IoIosNotifications className="text-3xl" />,
             show: true
         },
-        { 
-            tag: 'loan', 
-            text: 'Crear Solicitud de Préstamo',
-            icon:  <IoMdWallet className="text-3xl"/>,
+        {
+            tag: 'loan',
+            text: <a href="/LoanApplication">Crear Solicitud de Préstamo</a>,
+            icon: <IoMdWallet className="text-3xl" />,
+            show: true
+
+        },
+        {
+            tag: 'investor',
+            text: 'Invertir',
+            icon: <IoTrendingUpSharp className="text-3xl" />,
             show: true
         },
-        { 
-            tag: 'investor', 
-            text: 'Invertir', 
-            icon: <IoTrendingUpSharp className="text-3xl"/>,
-            show: true
-        },
-        { 
-            tag: 'movements', 
+        {
+            tag: 'movements',
             text: 'Mis movimientos',
-            icon: <RiExchangeDollarLine className="text-3xl"/>, 
+            icon: <RiExchangeDollarLine className="text-3xl" />,
             show: true,
             subsections: [
-                { 
-                    tag: 'loanRequests', 
+                {
+                    tag: 'loanRequests',
                     text: 'Mis Solicitudes',
-                    icon: <MdOutlineChecklistRtl className="text-3xl"/> 
+                    icon: <MdOutlineChecklistRtl className="text-3xl" />
                 },
-                { 
-                    tag: 'myInvestments', 
+                {
+                    tag: 'myInvestments',
                     text: 'Mis Inversiones',
-                    icon: <IoTrendingUpSharp className="text-3xl"/> 
+                    icon: <IoTrendingUpSharp className="text-3xl" />
                 },
-                { 
-                    tag: 'balanceHistory', 
+                {
+                    tag: 'balanceHistory',
                     text: 'Historial de Saldo',
-                    icon: <RiMoneyDollarBoxLine className="text-3xl"/>
+                    icon: <RiMoneyDollarBoxLine className="text-3xl" />
                 },
-            ] 
+            ]
         },
-        { 
-            tag: 'help', 
+        {
+            tag: 'help',
             text: 'Ayuda',
-            icon : <BiHelpCircle className="text-3xl"/>, 
+            icon: <BiHelpCircle className="text-3xl" />,
             show: true
         }
     ].filter((sec) => sec.show)
