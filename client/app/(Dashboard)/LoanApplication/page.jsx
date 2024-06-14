@@ -14,7 +14,8 @@ const Loan = () => {
     const [errors, setErrors] = useState({})
     const [data, setData] = useState({
         monto: "",
-        poryecto: "",
+        proyecto: "",
+        description: "",
 
     })
     console.log(data.monto);
@@ -59,7 +60,8 @@ const Loan = () => {
 
 
     const montoClass = errors.monto ? "flex justify-start rounded-xl bg-transparent border-solid border-2  border-red-700 xl:mt-2 xl:-ml-[40vh] xl:w-[60vh] h-[37px] 2xl:h-[57px]" : "flex justify-start rounded-xl bg-transparent border-solid border-2 border-[#113f63]  xl:mt-2 xl:-ml-[40vh] xl:w-[60vh] h-[37px] 2xl:h-[57px]";
-
+    const proyectoClass = errors.proyecto ? "bg-transparent border-solid border-2 border-red-700 rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2" : "bg-transparent border-solid border-2 border-[#113f63] rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2"
+    const descriptionClass = errors.description ? "bg-transparent border-solid border-2 border-red-700 rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2" : "bg-transparent border-solid border-2 border-[#113f63] rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2"
 
     return (
         <div className=" flex flex-col items-center text-[#112F63]">
@@ -80,13 +82,20 @@ const Loan = () => {
                         }
                     </div>
                     <label className="xl:ml-[25vh] xl:-mt-[12.8%] px-10  2xl:px-16 2xl:-mt-[10%]" >Proyecto a financiar</label>
-                    <Textarea maxlength="100" className="bg-transparent border-solid border-2 border-[#113f63] rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2"
+                    <Textarea maxlength="100" name="proyecto" type="text" value={data.proyecto} onChange={handleChange} className={proyectoClass}
                         classNames={{
                             innerWrapper: "bg-transparent xl:h-[7vh]",
                             inputWrapper: ["bg-transparent  overflow-auto",
                             ],
                             input: ["overflow-visible"]
                         }} />
+                    {errors.proyecto &&
+                        <div >
+                            <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:mt-2 xl:ml-[14vh]" />
+                            <p className="text-red-700 mt-4 -ml:-72 xl:max-w-full">{errors.poryecto}</p>
+                        </div>
+                    }
+
                     <div className="xl:-ml-[40vh] xl:mt-2 2xl:w-[40vw]">
                         <label>Número de Cuotas</label>
                         {isScreenSmall ? (<Slider
@@ -141,13 +150,19 @@ const Loan = () => {
                     </div>
                     <div className="xl:-mt-20">
                         <label className="ml-[31vh] mt-4">Cuéntanos tus Proyectos</label>
-                        <Textarea className="bg-transparent border-solid border-2 border-[#113f63] rounded-2xl xl:w-[60vh] xl:ml-[31vh] mt-2"
+                        <Textarea name="description" type="text" value={data.description} className={descriptionClass} onChange={handleChange}
                             classNames={{
                                 innerWrapper: "bg-transparent xl:h-[20vh]",
                                 inputWrapper: ["bg-transparent overflow-hidden"
                                 ],
                                 input: ["overflow-visible"]
                             }} />
+                        {errors.description &&
+                            <div >
+                                <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:mt-2 xl:ml-[14vh]" />
+                                <p className="text-red-700 mt-4 -ml:-72 xl:max-w-full">{errors.description}</p>
+                            </div>
+                        }
                     </div>
                     <div className="flex xl:w-[28vw] xl:-ml-[40vh] xl:-mt-20 rounded-lg border-dotted border-2 border-black text-[#113f63] 2xl:-mt-36">
                         <div className="flex flex-col border-dotted border-r-2 border-black xl:px-7 xl:py-2">
