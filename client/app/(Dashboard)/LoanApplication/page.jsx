@@ -16,9 +16,10 @@ const Loan = () => {
         monto: "",
         proyecto: "",
         description: "",
+        vacio: "",
 
     })
-    console.log(data.monto);
+
 
     //lo que hago aca es para que cuando se mueva el slider aumenta segun su valor   
     const handleSliderChange = (value) => {
@@ -91,7 +92,7 @@ const Loan = () => {
                         }} />
                     {errors.proyecto &&
                         <div >
-                            <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:mt-2 xl:ml-[14vh]" />
+                            <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:-mt-10 xl:ml-[84vh]" />
                             <p className="text-red-700 mt-4 -ml:-72 xl:max-w-full">{errors.poryecto}</p>
                         </div>
                     }
@@ -159,8 +160,8 @@ const Loan = () => {
                             }} />
                         {errors.description &&
                             <div >
-                                <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:mt-2 xl:ml-[14vh]" />
-                                <p className="text-red-700 mt-4 -ml:-72 xl:max-w-full">{errors.description}</p>
+                                <img src={images.error} className="xl:w-[20px] xl:h-[20px] xl:mr-2 xl:-mt-10 xl:ml-[84vh]" />
+                                <p className="text-red-700 mt-6 ml-[50vh] xl:max-w-full">{errors.description}</p>
                             </div>
                         }
                     </div>
