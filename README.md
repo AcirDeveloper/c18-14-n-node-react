@@ -79,3 +79,28 @@ Nuestra plataforma permite a los prestatarios obtener financiamiento flexible de
 |alantelo1987@gmail.com|afgomezvonline@gmail.com|damian.diaz.develop@gmail.com|acirdeveloper@gmail.com|palominoriosroy@gmail.com|
 | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)]() [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)]() | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](www.linkedin.com/in/andreygomez) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/afgomezv) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/damian-diaz-6a7537258/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/diaz027) |[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)]() [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)]() |[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/roypalominorios/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Pitt96) |
 
+<h3 align="center">Backend</h3>
+<p align="center"><strong>Tecnologías</strong></p>
+<div align="center"> 
+  <a href="" > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" /></a>
+  <a href="" > <img src="https://img.shields.io/badge/Express.js-%23000000?style=for-the-badge&logo=Express&logoColor=white" /></a>
+  <a href="" > <img src="https://img.shields.io/badge/typeorm-red?style=for-the-badge&logo=typeorm&logoColor=white&logoSize=auto&labelColor=red&color=red" /></a>
+  <a href="" > <img src="https://img.shields.io/badge/Node-339933?style=for-the-badge&logo=Node.js&logoColor=white" /></a>
+</div>
+
+|<img src="https://res.cloudinary.com/dxq0pypxu/image/upload/v1698800170/ea5pf6rieuwpddt5cs40.png" width="100" height="100" alt="Sonny Pimientel"> |
+| :--: |
+|**Sonny Pimientel**|
+|spimentelm1201@gmail.com|
+| [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/sonny-pimentel) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/spimentel1201) |
+
+<h3 align="center">Tester Q/A</h3>
+<p align="center"><strong>Tecnologías</strong></p>
+<div align="center">
+</div>
+
+|<img src="https://ca.slack-edge.com/T02KS88FB0E-U05T9A6SNTC-320364e32724-512" width="100" height="100" alt="Paula Wolf"> |
+| :--: |
+|**Paula Wolf**|
+|wolfpaularenata@gmail.com |
+| [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/paula-renata-wolf) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/WolfPaulaRenata) |
