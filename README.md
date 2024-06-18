@@ -6,7 +6,12 @@ Nuestra plataforma permite a los prestatarios obtener financiamiento flexible de
 <H2 align="center"> Video Promocional </H2>
 <div align="center"> <a href="" > <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=YouTube&logoColor=white"/></a></div>
 <H2 align="center"> Proyecto </H2>
-<div align="center"> <a href="https://github.com/No-Country/c18-14-n-node-react" > <img src="https://cdn.discordapp.com/attachments/1238921841859498024/1250983575004643478/image.png?ex=666d957e&is=666c43fe&hm=2b62307f8fc8952f564325a18c5c22a177fbabcb04ebf1dccd7e9495858be957&" height="30" width="110" /></a></div>
+<div align="center"> 
+  <a href="" > <img src="https://cdn.discordapp.com/attachments/1171642808571011165/1252658659394191501/DESPLEGAR.png?ex=667304c9&is=6671b349&hm=593d02e748c1ad942ad20332de47618f48b1737bfe57d32ca229ccc69341e0e6&" height="25" width="110" /></a>
+  <a href="" > <img src="https://cdn.discordapp.com/attachments/1171642808571011165/1252658660048371742/PROTOTIPO.png?ex=667304c9&is=6671b349&hm=4990a283f4126b434ce30025931147f9c7a69456871b9c14f5307c2c744209cc&" height="25" width="110" /></a>
+  <a href="" > <img src="https://cdn.discordapp.com/attachments/1171642808571011165/1252658659616493621/MOCKUP.png?ex=667304c9&is=6671b349&hm=71055d597f2ae037b19a78eb1d4cbe2ff428cb9f8fc330e3d8b4be406ca58795&" height="25" width="110" /></a>
+  <a href="" > <img src="https://cdn.discordapp.com/attachments/1171642808571011165/1252658660728115363/UI_KIT.png?ex=667304c9&is=6671b349&hm=0bc768b61cb5c664b8a7927950c1c72cbb9edfe0d32cac0f255f3d81794dcdb7&" height="25" width="110" /></a>
+</div>
 <H2 align="center"> Funcionalidades Principales </H2>
 <p<>Nuestra plataforma permite a los usuarios:</p>
 </br>
@@ -43,8 +48,20 @@ Nuestra plataforma permite a los prestatarios obtener financiamiento flexible de
   </li>
 </ul>
 <H2 align="center"> Instalación </H2>
-<a href="https://github.com/AcirDeveloper/c18-14-n-node-react/tree/dev/client"> Frontend </a>
-<h3>Backend</h3>
+<ul><li><a href="https://github.com/AcirDeveloper/c18-14-n-node-react/tree/dev/client"> Frontend </a></li>
+<li><a href="https://github.com/AcirDeveloper/c18-14-n-node-react/tree/dev/client"> Backend </a></li></ul>
+<H2 align="center"> Equipos de Desarrollo </H2>
+<h3>Diseño UX/UI</h3>
 
+<p align="center">Tecnologías</p>
+<div align="center"> 
+  <a href="" > <img src="https://img.shields.io/badge/Figma-000000.svg?style=for-the-badge&logo=Figma&logoColor=white" /></a>
+  <a href="" > <img src="https://img.shields.io/badge/adobe%20illustrator-blue?style=for-the-badge&logo=adobeillustrator&logoColor=black&logoSize=auto&labelColor=%23FF6719&color=%23FF6719" /></a>
+</div>
 
+|<img src="https://ca.slack-edge.com/T02KS88FB0E-U072JK3NVPT-71069c307a23-512" width="100" height="100" alt="Aimme Vivas"> | <img src="https://ca.slack-edge.com/T02KS88FB0E-U0725SLGW1Z-249c506e090f-512" width="100" height="100" alt="Marianny Rico">| <img src="https://ca.slack-edge.com/T02KS88FB0E-U056LV8T4DP-880888ccdb29-512" width="100" height="100" alt="Martina Chiara">|
+| :--: | :--: | :--: |
+|**Aimme Vivas**|**Marianny Rico**|**Martina Chiara**|
+|aimmviv1@gmail.com|ricomarianny.it@gmail.com|martuhcy@gmail.com|
+| [![Behance](https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=Behance&logoColor=white)](https://www.behance.net/vaninarestelli) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/vaninarestelli?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Bfix40) | [![Behance](https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=Behance&logoColor=white)](https://www.behance.net/belenfernandezm) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/vaninarestelli?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Bfix40) | [![Behance](https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=Behance&logoColor=white)](https://www.behance.net/belenfernandezm) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/vaninarestelli?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Bfix40) |
 
