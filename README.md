@@ -103,7 +103,7 @@ Nuestra plataforma permite a los prestatarios obtener financiamiento flexible de
 | :--: |
 |**Paula Wolf**|
 |wolfpaularenata@gmail.com |
-| [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/paula-renata-wolf) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/WolfPaulaRenata) |
+| [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/paula-renata-wolf-86998693?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/WolfPaulaRenata) |
 
 <h2 align="center">Agradecimientos</h2>
 <p align="center">Nuestro agradecimiento especial a <strong href="https://www.nocountry.tech/"> NoCountry </strong> por la oportunidad de armar este gran equipo y realizar este proyecto donde aprendimos mucho poniendo en práctica nuestras habilidades y conocimientos y esforzarnos para aprender mucho más en su desarrollo</p>
