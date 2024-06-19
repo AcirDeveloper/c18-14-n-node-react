@@ -88,9 +88,9 @@ Nuestra plataforma permite a los prestatarios obtener financiamiento flexible de
   <a href="" > <img src="https://img.shields.io/badge/Node-339933?style=for-the-badge&logo=Node.js&logoColor=white" /></a>
 </div>
 
-|<img src="https://res.cloudinary.com/dxq0pypxu/image/upload/v1698800170/ea5pf6rieuwpddt5cs40.png" width="100" height="100" alt="Sonny Pimientel"> |
+|<img src="https://res.cloudinary.com/dxq0pypxu/image/upload/v1698800170/ea5pf6rieuwpddt5cs40.png" width="100" height="100" alt="Sonny Pimentel"> |
 | :--: |
-|**Sonny Pimientel**|
+|**Sonny Pimentel**|
 |spimentelm1201@gmail.com|
 | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/sonny-pimentel) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/spimentel1201) |
 
