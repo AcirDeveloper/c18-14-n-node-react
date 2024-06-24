@@ -4,12 +4,18 @@
          "es5",
          "es6"
       ],
-      "target": "es5",
+      "target": "es6",
       "module": "commonjs",
+      "esModuleInterop": true, 
+      "allowSyntheticDefaultImports": true,
       "moduleResolution": "node",
       "outDir": "./build",
+      "rootDir": "./src",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "sourceMap": true
-   }
+      "sourceMap": true,
+      "typeRoots": ["./node_modules/@types", "./types"]
+   },
+   "include": ["src/**/*.ts","src/types/**/*.d.ts"],
+   "exclude": ["node_modules"]
 }
